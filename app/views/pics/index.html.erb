@@ -1,0 +1,15 @@
+	<% @pics.each do |pic| %>
+		<div class="span3 text-center steamy-strudel">
+			
+			<h1 class="changing-the-header-font-hey-hey-hey">
+				Hour: <%= pic.hour %>
+			</h1>
+			<h2>
+			<br />
+			Emotion: <%= pic.emotion %>
+			<br />
+			<br />
+			Learned: <%= pic.learned %>
+			</h2>
+		</div>
+	<% end %>
