@@ -1,14 +1,17 @@
-<div class="steamy-strudel">
-	<h2>
+<div class="span6 offset4 text-center steamy-strudel">
+	<h1 class="changing-the-header-font-hey-hey-hey">
 		my first form in ruby on rails using simple_form!!!!!!!
-	
+	</h1>
+
+	<br />
+	<h2>
 		<%= simple_form_for @pic do |f| %>
-			<%= f.input :hour %>
-			<%= f.input :emotion %>
-			<%= f.input :learned %>
+			<%= f.input :hour, label: 'Which hour was this?', placeholder: '1, 2, 3, etc.' %>
+			<%= f.input :emotion, label: 'How did you feel?', placeholder: 'Stoked, Excited, Confused' %>
+			<%= f.input :learned, label: 'What did you learn?', placeholder: 'HTML, CSS3, Rails, Ruby, Github' %>
 
 			<%= f.submit 'Save' %>
 		<% end %>
-
 	</h2>
+
 </div>

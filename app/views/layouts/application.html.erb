@@ -20,17 +20,17 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">All the Links</a>
+      <%= link_to 'Marco Trying to Push Button', root_path, :class =>"brand" %>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
         <!-- .nav, .navbar-search, .navbar-form, etc -->
       	<ul class = "nav">
       		<li>
-      			<%= link_to 'Toon Link', '#' %>
+      			<%= link_to 'My App', pics_path %>
       		</li>
       		<li>
-      			<%= link_to 'Ocarina of Time Link', '#' %>
+      			<%= link_to 'New Image', new_pic_path %>
       		</li>
       </div>
  
