@@ -27,9 +27,13 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# stuff we added
 gem "twitter-bootstrap-rails"
-
 gem 'simple_form'
+## from the github: Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks
+gem 'carrierwave'
+## from the carrierwave docs, needed to support Amazon S3
+gem "fog", "~> 1.3.1"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
